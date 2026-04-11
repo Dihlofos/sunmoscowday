@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "GrtskGiga";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: local("GrtskGiga"), local("GrtskGiga Regular"),
+    url("../fonts/GrtskGiga-Regular.woff2") format("woff2"),
+    url("../fonts/GrtskGiga-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GrtskGiga";
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+  src: local("GrtskGiga"), local("GrtskGiga Bold"),
+    url("../fonts/GrtskGiga-Medium.woff2") format("woff2"),
+    url("../fonts/GrtskGiga-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GrtskGiga";
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: local("GrtskGiga"), local("GrtskGiga Bold"),
+    url("../fonts/GrtskGiga-Bold.woff2") format("woff2"),
+    url("../fonts/GrtskGiga-Bold.woff") format("woff");
+}

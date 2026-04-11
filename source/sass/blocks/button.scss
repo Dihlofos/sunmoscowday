@@ -1,0 +1,28 @@
+.primary-btn {
+   color: $white;
+   font-family: $grtskgiga;
+   font-size: 3.8rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   text-transform: uppercase;
+   border-radius: 12px;
+   border: 2px solid $orange;
+   background: transparent;
+   padding: 1.2rem 1.8rem;
+   // padding: 1.2rem 1.8rem 0.5rem;
+   cursor: pointer;
+   flex-shrink: 0;
+
+   @media (max-width: $tablet) {
+      border: 1px solid $orange;
+      border-radius: 6px;
+      font-size: 2.2rem;
+      padding: 0.5rem 0.8rem;;
+    }
+
+   &--active {
+      border: 2px solid $orange;
+      background: $orange;
+   }
+}

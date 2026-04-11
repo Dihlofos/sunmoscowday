@@ -1,0 +1,19 @@
+.title {
+  font-family: $grtskgiga;
+  font-weight: 700;
+  font-size: 7.5rem;
+  line-height: 7.5rem;
+  color: $orange;
+  text-transform: uppercase;
+  margin: 0 0 6rem;
+  letter-spacing: 0.01rem;
+
+  &--white {
+    color: $white;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+}

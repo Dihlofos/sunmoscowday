@@ -1,0 +1,78 @@
+.cookie-modal {
+   position: fixed;
+   bottom: 2rem;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 1000;
+   background-color: $black;
+   border-radius: 30px;
+   padding: 3.4rem;
+   color: $black;
+   max-width: 76rem;
+
+   @media (max-width: $tablet) {
+     width: 92%;
+     padding: 1.8rem;
+   }
+
+   &.hidden {
+     display: none;
+   }
+
+   &__close {
+      width: 3.86rem;
+       height: 3.86rem;
+     background: $black;
+     border-radius: 50%;
+     display: flex;
+      justify-content: center;
+      align-items: center;
+     border: none;
+     position: absolute;
+     top: 3.4rem;
+     right: 3.4rem;
+     padding: 0;
+     cursor: pointer;
+
+     @media (max-width: $tablet) {
+       top: 1.8rem;
+       right: 1.8rem;
+       width: 2.7rem;
+       height: 2.7rem;
+     }
+
+     img {
+      width: 1.86rem;
+      height: 1.86rem;
+     }
+   }
+
+   &__text {
+     width: 85%;
+
+     p {
+      color: $white;
+      font-family: $grtskgiga;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2rem; /* 125% */
+       margin: 0;
+
+       &:not(:last-child) {
+         margin: 0 0 2rem;
+       }
+
+
+       a {
+         color: currentColor;
+       }
+
+       @media (max-width: $mobile) {
+         font-size: 1.4rem;
+         line-height: 1.1;
+       }
+     }
+   }
+
+ }

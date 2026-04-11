@@ -1,0 +1,304 @@
+.map {
+   position: relative;
+
+   .container {
+      padding-block: 0 20rem;
+
+      @media (max-width: $tablet) {
+         padding-block: 0 13rem;
+      }
+
+      @media (max-width: $tablet) {
+         padding-block: 0 8rem;
+      }
+   }
+
+   &__vector {
+      width: 90rem;
+      position: absolute;
+      top: -15rem;
+      right: 0;
+      transform: translateX(40%);
+
+      @media (max-width: $tablet) {
+         display: none;
+      }
+   }
+
+
+   &__map {
+     position: relative;
+     width: 78.5rem;
+     height: 58.1rem;
+     background-color: $black;
+     z-index: 7;
+     border-radius: 20px;
+      overflow: hidden;
+
+     @media (max-width: $tablet) {
+       width: 100%;
+       height: 37.6rem;
+     }
+
+     @media (max-width: $mobile) {
+      height: 25rem;
+      border-radius: 10px;
+    }
+   }
+
+   &__legend-wrapper {
+     position: relative;
+
+     &:before {
+      display: none;
+
+       content: '';
+       position: absolute;
+       width: 1px;
+       height: 100%;
+       left: 0.63rem;
+       top: 0;
+       background-color: $white;
+
+       @media (max-width: $tablet) {
+            display: none;
+      }
+     }
+
+     @media (max-width: $tablet) {
+      width: 100%;
+      }
+
+   }
+
+   &__legend {
+     position: relative;
+     padding-left: 2rem;
+     width: 58.3rem;
+     height: 58.1rem;
+     overflow: auto;
+
+     @media (max-width: $tablet) {
+         padding-left: 0rem;
+         overflow: visible;
+         width: 100%;
+         height: auto;
+      }
+
+     &::-webkit-scrollbar {
+       width: 15px;
+     }
+
+     &::-webkit-scrollbar-track {
+       background: transparent;
+     }
+
+     &::-webkit-scrollbar-thumb {
+       background-color: $orange;
+        border: 3px solid transparent;
+       border-radius: 7px;
+       background-clip: content-box;
+
+     }
+
+   }
+
+   &__map-content {
+     display: flex;
+     align-items: flex-start;
+     justify-content: space-between;
+     gap: 2.2rem;
+
+     @media (max-width: $tablet) {
+       flex-direction: column;
+       gap: 0.2rem;
+     }
+   }
+
+   &__legend-item {
+     width: 100%;
+     background: none;
+     border: none;
+     color: $white;
+     display: flex;
+   //   gap: 2.7rem;
+     padding: 1.6rem 1.6rem 1.6rem 2rem;
+     justify-content: space-between;
+     align-items: flex-start;
+     margin: 0 0 1.2rem;
+     text-align: left;
+     font-family: $grtskgiga;
+     cursor: pointer;
+     border-radius: 20px;
+     background: $black;
+     transition: 0.3s ease;
+
+     @media (max-width: $mobile) {
+      padding: 1.6rem;
+      border-radius: 12px;
+      }
+
+      &:hover {
+         background: linear-gradient(178deg, #28293E 15.92%, #FF57D8 231.11%);
+      }
+     &.is-active {
+      background: linear-gradient(178deg, #28293E 15.92%, #FF57D8 231.11%);
+     }
+
+     @media (max-width: $mobile) {
+       padding: 1.5rem 1.6rem;
+       gap: 2.5rem;
+     }
+   }
+
+   &__legend-digit {
+     color: $white;
+     text-transform: uppercase;
+     font-size: 3.2rem;
+
+     @media (max-width: $mobile) {
+       font-size: 2.2rem;
+     }
+   }
+
+
+   &__legend-title-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 1.6rem;
+
+
+    }
+
+   &__legend-title {
+     font-size: 3rem;
+     line-height: 2.5rem;
+     text-transform: uppercase;
+     margin: 0 0 0.9rem;
+
+   //   .is-active & {
+   //     color: $white;
+   //   }
+
+   @media (max-width: $mobile) {
+      font-size: 2.2rem;
+    }
+   }
+
+   ymaps {
+      canvas {
+         filter: grayscale(1);
+         -ms-filter: grayscale(1);
+         -webkit-filter: grayscale(1);
+         -moz-filter: grayscale(1);
+         -o-filter: grayscale(1);
+      }
+   }
+
+   &__marker {
+     display: flex;
+     align-items: center;
+     padding-bottom: 0.2rem;
+     justify-content: center;
+     text-transform: uppercase;
+     font-family: $grtskgiga;
+     width: 4rem;
+     height: 5rem;
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='50' viewBox='0 0 40 50' fill='none'><path d='M40 20.5128C40 31.8417 20.0002 50 20.0002 50C20.0002 50 0 31.8417 0 20.5128C0 9.1839 8.9543 0 20 0C31.0457 0 40 9.1839 40 20.5128Z' fill='%23F843BF'/></svg>");
+     background-size: contain;
+     cursor: pointer;
+     font-size: 3.6rem;
+
+     &.is-active {
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='50' viewBox='0 0 40 50' fill='none'><path d='M40 20.5128C40 31.8417 20.0002 50 20.0002 50C20.0002 50 0 31.8417 0 20.5128C0 9.1839 8.9543 0 20 0C31.0457 0 40 9.1839 40 20.5128Z' fill='%233B3393'/></svg>");
+   }
+
+     @media (max-width: $mobile) {
+       width: 2.4rem;
+       height: 3rem;
+       font-size: 2.2rem;
+       padding-top: 0rem;
+     }
+
+
+   }
+
+   &__more {
+     display: inline-block;
+     color: $white;
+     background-color: $black;
+     border-radius: 12px;
+     padding: 0.8rem 1.6rem;
+     border: none;
+     text-align: center;
+     text-decoration: none;
+      font-family: $grtskgiga;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2rem;
+      transition: 0.3s ease;
+
+      &:hover {
+         background-color: $orange;
+      }
+
+   //   .is-active & {
+   //       background-color: $orange;
+
+   //    &:hover {
+   //       background-color: $white;
+   //       color: $black;
+   //    }
+   //   }
+
+     @media (max-width: $mobile) {
+       border-radius: 6px;
+       font-size: 0.9rem;
+       padding: 0.4rem 1rem;
+     }
+   }
+
+   &__legend-content {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__legend-pin {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+     color: $orange;
+      font-family: $grtskgiga;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 2rem;
+
+   //   .is-active & {
+   //     color: $black;
+   //   }
+
+     @media (max-width: $mobile) {
+       font-size: 1.2rem;
+       gap: 0.6rem;
+     }
+
+
+     svg {
+      width: 16px;
+      height: 20px;
+      flex-shrink: 0;
+      @media (max-width: $mobile) {
+
+         width: 1.4rem;
+         height: 1.7rem;
+       }
+     }
+
+   }
+
+ }
+
+
+

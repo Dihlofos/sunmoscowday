@@ -1,0 +1,30 @@
+.container {
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+  box-sizing: content-box;
+
+
+
+  @media (max-width: $laptop) {
+    min-width: 67.8rem;
+    padding: 0 4.5rem;
+  }
+
+  @media (max-width: $tablet) {
+    min-width: initial;
+    max-width: initial;
+    padding: 0 24px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0 20px;
+  }
+}
+
+.container-small {
+   max-width: 140rem;
+   margin: 0 auto;
+   box-sizing: content-box;
+}
+

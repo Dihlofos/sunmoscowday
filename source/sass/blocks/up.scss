@@ -1,0 +1,41 @@
+.up {
+    position: fixed;
+    z-index: 10;
+    border-radius: 50%;
+    border: 2px solid $white;
+    justify-content: center;
+    align-items: center;
+    bottom: 3.3rem;
+   right: calc((100% - 160rem) / 2 + 10rem); 
+    width: 3.6rem;
+    height: 3.6rem;
+    cursor: pointer;
+    display: none;
+    box-sizing: border-box;
+    flex-shrink: 0; 
+    transition: bottom 0.3s ease;
+
+    @media (max-width: $desktop) {
+      right: 20px;
+    }
+
+    @media (max-width: $mobile) {
+      border: 1.5px solid $white;
+      bottom: 30px;
+      width: 27px;
+      height: 27px;
+    }
+
+
+    &--shown {
+      display: flex;
+    }
+
+   
+    img {
+      @media (max-width: $mobile) {
+         width: 12px;
+       }
+    }
+
+  }
