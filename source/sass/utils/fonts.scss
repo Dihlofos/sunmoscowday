@@ -1,29 +1,10 @@
 @font-face {
-  font-family: "GrtskGiga";
+  font-family: "Roboto-Flex";
   font-display: swap;
-  font-weight: 400;
+  font-weight: 100 900; /* Define the available range of weight */
+  font-stretch: 75% 125%; /* Define the available range of width */
   font-style: normal;
-  src: local("GrtskGiga"), local("GrtskGiga Regular"),
-    url("../fonts/GrtskGiga-Regular.woff2") format("woff2"),
-    url("../fonts/GrtskGiga-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "GrtskGiga";
-  font-display: swap;
-  font-weight: 500;
-  font-style: normal;
-  src: local("GrtskGiga"), local("GrtskGiga Bold"),
-    url("../fonts/GrtskGiga-Medium.woff2") format("woff2"),
-    url("../fonts/GrtskGiga-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "GrtskGiga";
-  font-display: swap;
-  font-weight: 700;
-  font-style: normal;
-  src: local("GrtskGiga"), local("GrtskGiga Bold"),
-    url("../fonts/GrtskGiga-Bold.woff2") format("woff2"),
-    url("../fonts/GrtskGiga-Bold.woff") format("woff");
+  src: local("RobotoFlex"), local("RobotoFlex Regular"),
+    url("../fonts/RobotoFlex.woff2") format("woff2"),
+    url("../fonts/RobotoFlex.woff") format("woff");
 }

@@ -20,7 +20,7 @@ body {
   position: relative;
   min-width: 320px;
   margin: 0 auto;
-  font-family: $grtskgiga;
+  font-family: $roboto;
   background-color: $red;
   color: $white;
   overflow-x: hidden;
@@ -47,7 +47,7 @@ body {
 // }
 
 button {
-  font-family: $grtskgiga;
+  font-family: $roboto;
 }
 
 body,
@@ -88,7 +88,7 @@ img {
 .header-l {
    color: $white;
    text-align: center;
-   font-family: $grtskgiga;
+   font-family: $roboto;
    font-size: 6.4rem;
    font-style: normal;
    font-weight: 400;
