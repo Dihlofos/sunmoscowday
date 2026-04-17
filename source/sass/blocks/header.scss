@@ -4,12 +4,14 @@
   left: 0;
   width: 100%;
   z-index: 60;
-  height: 7.3rem;
+  transition: background-color 0.3s ease;
+  background: transparent;
+
+  &.is-scrolled {
+    background-color: $red;
+  }
 
    &__container {
-      background-color: rgba(30, 31, 50, 0.60);
-      backdrop-filter: blur(20px);
-
       &.nav-open {
          background: $black;
          backdrop-filter: none;
@@ -21,15 +23,7 @@
        }
    }
 
-
-  .container {
-    max-width: 160rem;
-
-
-  }
-
   &__logos-wrapper {
-   display: none;
 
    @media (max-width: $tablet) {
       display: flex;
@@ -63,7 +57,7 @@
 
   &__nav {
     position: relative;
-    padding: 3.6rem 0;
+    padding: 2.3rem 0;
     flex-shrink: 0;
     z-index: 2;
 
@@ -73,7 +67,7 @@
   &__content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 
     @media (max-width: $tablet) {

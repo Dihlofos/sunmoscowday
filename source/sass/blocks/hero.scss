@@ -1,0 +1,103 @@
+.hero {
+  position: relative;
+  background: linear-gradient(14deg, #F8C768 -25.45%, #FF1420 99.97%);
+  background-color: black;
+
+  .container {
+    padding: 13.6rem 0 10rem;
+    position: relative;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__decor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__title {
+    user-select: none;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__subtitle {
+    position: relative;
+    right: -1.3rem;
+    max-width: 35.8rem;
+    margin: 0 auto -5rem;
+    font-family: $roboto;
+    font-size: 2rem;
+    font-weight: 790;
+    line-height: 1.2;
+    letter-spacing: 0.08rem;
+    font-stretch: 130%;
+  }
+
+  &__label {
+    background-color: $white;
+    color: $black;
+    padding: 1.4rem 2.8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $red;
+    border-radius: 30px;
+    display: block;
+    width: fit-content;
+    margin-top:0.2rem;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+  }
+
+  &__logos {
+    max-width: 58.2rem;
+    display: flex;
+    gap: 4.8rem;
+    margin-top: 1rem;
+  }
+
+  &__dates {
+    font-family: $roboto;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-stretch: 123%;
+    letter-spacing: 0.05rem;
+  }
+
+  &__time {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.3rem;
+    align-items: center;
+    margin-top: 0.5rem;
+
+    span {
+      display: flex;
+      align-self: center;
+      gap: 0.5rem;
+    }
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+
+}
