@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Montserrat1";
   font-display: swap;
   font-weight: 500;
   font-style: normal;
@@ -24,7 +24,7 @@
   font-display: swap;
   font-weight: 400;
   font-style: normal;
-  src: local("Montserrat"), local("Regular.woff2") format("woff2"),
+  src: local("Montserrat"), local("Montserrat Regular") format("woff2"),
     url("../fonts/Montserrat-Regular.woff") format("woff");
 }
 

@@ -1,0 +1,113 @@
+.schedule {
+  background: linear-gradient(135deg, #FF1420 9.32%, #F8C768 109.62%), #FA9500;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    padding: 6rem 0 8.5rem;
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 4;
+  }
+
+  &__decor {
+    position: absolute;
+    right: -51.5rem;
+    bottom: 3rem;
+    z-index: 1;
+  }
+
+  &__title {
+    margin: 0 0 2rem;
+  }
+
+  &__content {
+    display: none;
+    &.is-active {
+      display: block;
+    }
+  }
+
+  &__description {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    max-width: 54.3rem;
+  }
+
+  &__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin: 3.2rem 0 4.4rem;
+  }
+
+  &__tab {
+    font-family: $monserrat;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.05;
+    border: 1px solid $white;
+    padding: 1.2rem 2rem;
+    color: $white;
+    border-radius: 30px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &.is-active,
+    &:hover {
+      background: $white;
+      color: $red;
+    }
+  }
+
+  &__days {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.4rem;
+  }
+
+  &__day {
+    background-color: $white;
+    color: $black;
+    border-radius: 20px;
+    padding: 2.8rem 3.2rem 2.2rem;
+  }
+
+  &__day-title {
+    font-family: $roboto;
+    font-size: 2.4rem;
+    font-weight: 790;
+    line-height: 1.2;
+    color: $orange;
+    font-stretch: 129%;
+    letter-spacing: 0.1rem;
+    margin: 0 0 2rem;
+  }
+
+  &__day-list {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+
+  &__day-item {
+    display: flex;
+    gap: 0.8rem;
+    font-size: 1.6rem;
+    line-height: 1.16;
+    margin: 0 0 0.9rem;
+  }
+
+  &__day-time {
+    color: $orange;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 14.8rem;
+    flex-shrink: 0;;
+
+  }
+}

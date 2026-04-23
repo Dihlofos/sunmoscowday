@@ -1,12 +1,13 @@
 .title {
+  color: $red;
   font-family: $roboto;
-  font-weight: 700;
-  font-size: 7.5rem;
-  line-height: 7.5rem;
-  color: $orange;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 790;
+  line-height: 1.15;
   text-transform: uppercase;
-  margin: 0 0 6rem;
-  letter-spacing: 0.01rem;
+  font-stretch: 139%;
+  letter-spacing: 0.35rem;
 
   &--white {
     color: $white;
