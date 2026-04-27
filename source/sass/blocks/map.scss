@@ -8,7 +8,11 @@
       padding: 6rem 0 9.8rem;
 
       @media (max-width: $tablet) {
-         padding: 3.6rem 2.4rem 6.8rem;
+        padding: 3.6rem 2.4rem 6.8rem;
+      }
+
+      @media (max-width: $tablet) {
+        padding: 3.6rem 2rem 5rem;
       }
    }
 
@@ -27,6 +31,10 @@
     margin: 0 0 1.9rem;
     font-stretch: 123%;
 
+    @media (max-width: $mobile) {
+      margin: 0 0 1.1rem;
+    }
+
    }
 
    &__description {
@@ -35,6 +43,11 @@
     font-weight: 500;
     max-width: 48.6rem;
     margin: 0 0 4.2rem;
+
+    @media (max-width: $mobile) {
+      font-size: 1.6rem;
+      margin: 0 0 4rem;
+    }
    }
 
    &__vector {
@@ -65,8 +78,7 @@
      }
 
      @media (max-width: $mobile) {
-      height: 25rem;
-      border-radius: 10px;
+      height: 31.4rem;
     }
    }
 
@@ -149,6 +161,10 @@
      text-align: left;
      font-family: $roboto;
      cursor: pointer;
+
+     @media(max-width: $mobile) {
+      margin: 0 0 1.9rem;
+     }
    }
 
    &__legend-digit {
@@ -171,6 +187,12 @@
       background-color: $red;
       color: $white;
     }
+
+    @media (max-width: $mobile) {
+      width: 2.8rem;
+      height: 2.8rem;
+      font-size: 1.6rem;
+    }
    }
 
 
@@ -179,6 +201,10 @@
       flex-direction: row;
       gap: 1.6rem;
       padding-top: .2rem;
+
+      @media(max-width:$mobile) {
+        padding-top: 0;
+      }
     }
 
    &__legend-title {
@@ -188,7 +214,8 @@
      margin: 0 0 0.9rem;
 
    @media (max-width: $mobile) {
-      font-size: 2.2rem;
+      font-size: 2rem;
+      margin: 0 0 0.4rem;
     }
    }
 
@@ -227,11 +254,9 @@
      @media (max-width: $mobile) {
        width: 2.4rem;
        height: 3rem;
-       font-size: 2.2rem;
+       font-size: 1.4rem;
        padding-top: 0rem;
      }
-
-
    }
 
 
@@ -259,6 +284,14 @@
 
       a {
         color: $white;
+      }
+
+      @media(max-width: $mobile) {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.2rem;
+        line-height: 1;
+        gap: 1.1rem;
       }
    }
  }

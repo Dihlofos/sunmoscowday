@@ -22,6 +22,10 @@
 
   &__title {
     margin: 0 0 2rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 1rem;
+    }
   }
 
   &__top {
@@ -35,6 +39,14 @@
 
     .subtitle {
       margin: 0 0 .9rem;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.2;
+
+      @media (max-width: $mobile) {
+        font-size: 1.6rem;
+        margin: 0 0 3.5rem;
+      }
     }
 
     @media (max-width: $tablet) {
@@ -63,13 +75,17 @@
     p:not(:last-child) {
       margin: 0 0 0.9rem
     }
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+    }
   }
 
   &__marquee {
     display: none;
     flex-direction: column;
     gap: 0.8rem;
-    margin: 3.2rem 0;
+    margin: 0 0 3.2rem;
 
     @media (max-width: $tablet) {
       display: flex;
@@ -86,6 +102,13 @@
       grid-template-columns: 1fr 1fr;
       margin-top: 3.8rem;
     }
+
+    @media(max-width: $mobile) {
+      grid-template-columns: 1fr;
+      flex-wrap: wrap;
+      margin-top: 4rem;
+      gap: 1.4rem;
+    }
   }
 
   &__bullit {
@@ -99,11 +122,50 @@
       background-color: $orange;
       flex-direction: column-reverse;
     }
+
+
+    @media(max-width: $mobile) {
+      width: 100%;
+      flex-direction: row;
+
+      &--reverse {
+        flex-direction: row-reverse;
+      }
+
+      &:first-child {
+        .about__bullit-image {
+          aspect-ratio: 145/120;
+          width: 14.5rem;
+        }
+      }
+
+      &:nth-child(2) {
+        .about__bullit-image {
+          width: 12.3rem;
+        }
+      }
+
+      &:nth-child(3) {
+        .about__bullit-image {
+          width: 12.5rem;
+        }
+      }
+
+      &:nth-child(4) {
+        .about__bullit-image {
+          width: 11.5rem;
+        }
+      }
+    }
   }
 
   &__bullit-text {
     padding: 1.6rem 1.6rem 1.8rem;
     color: $white;
+
+    @media (max-width: $mobile) {
+      padding: 1.4rem 1.2rem 1.1rem;
+    }
   }
 
   &__bullit-title {
@@ -114,6 +176,10 @@
     font-family: $roboto;
     font-stretch: 130%;
     letter-spacing: 0.1rem;
+
+    @media (max-width: $mobile) {
+      font-size: 1.6rem;
+    }
   }
 
   &__bullit-description {
@@ -121,6 +187,8 @@
     font-weight: 600;
     line-height: 1.2;
     margin: 0;
+
+
   }
 
   &__bullit-image {
@@ -128,6 +196,13 @@
     img {
       width: 100%;
       height: 100%;
+    }
+
+    @media (max-width: $mobile) {
+      flex-shrink: 0;
+      img {
+        object-fit: cover;
+      }
     }
 
   }
