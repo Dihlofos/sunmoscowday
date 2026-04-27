@@ -45,11 +45,6 @@
       // padding: 0;
       padding: 2.1rem 0 2.1rem;
 
-      @media (max-width: $tablet) {
-         padding: 1.8rem;
-         font-size: 2.8rem;
-      }
-
       &.active {
          .faq__down {
          display: none;
@@ -61,6 +56,10 @@
 
       }
 
+      @media (max-width: $tablet) {
+        padding: 1.6rem 0 1.6rem;
+      }
+
    }
 
    &__icon {
@@ -68,21 +67,11 @@
       width: 3.6rem;
       height: 3.6rem;
 
-      @media (max-width: $tablet) {
-         width: 2.4rem;
-         height: 2.4rem;
-      }
-
       img {
          width: 3.6rem;
          height: 3.6rem;
          fill: $orange;
          align-self: flex-start;
-
-         @media (max-width: $tablet) {
-            width: 2.4rem;
-            height: 2.4rem;
-         }
       }
 
       .faq__up {
@@ -102,15 +91,15 @@
       line-height: 119%;
       // margin: 3rem 0 1.1rem;
       max-width: 68rem;
-      padding: 0 0 2.1rem;
+      padding: 0 0 1.8rem;
       font-stretch: 112%;
       letter-spacing: 0.01rem;
       margin-top: -2.1rem;
 
       @media (max-width: $tablet) {
-         font-size: 1.4rem;
-         padding: 0 1.8rem 1.8rem 1.8rem;
+        margin-top: -1.6rem;
       }
+
 
       &.active {
          display: block;

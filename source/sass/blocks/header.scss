@@ -9,6 +9,10 @@
 
   &.is-scrolled {
     background-color: $red;
+
+    @media (max-width: $tablet) {
+      background: transparent;
+    }
   }
 
    &__container {
@@ -26,7 +30,7 @@
   &__logos-wrapper {
 
    @media (max-width: $tablet) {
-      display: flex;
+      display: none;
       flex-direction: row;
       align-items: center;
       gap: 1.2rem;

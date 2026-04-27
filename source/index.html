@@ -53,12 +53,14 @@
         <nav class="nav nav--mobile js-nav">
 
           <button class="nav__mobile-toggler js-nav-toggler">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
-               <rect y="0.5" width="30" height="30" rx="6" fill="#F843BF"/>
-               <rect x="5" y="8.5" width="20" height="2" fill="white"/>
-               <rect x="5" y="14.5" width="20" height="2" fill="white"/>
-               <rect x="5" y="20.5" width="20" height="2" fill="white"/>
-             </svg>
+            <svg class="burger" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="18" fill="#F7C667"/>
+              <path d="M10 21C9.71667 21 9.47934 20.904 9.288 20.712C9.09667 20.52 9.00067 20.2827 9 20C8.99934 19.7173 9.09534 19.48 9.288 19.288C9.48067 19.096 9.718 19 10 19H26C26.2833 19 26.521 19.096 26.713 19.288C26.905 19.48 27.0007 19.7173 27 20C26.9993 20.2827 26.9033 20.5203 26.712 20.713C26.5207 20.9057 26.2833 21.0013 26 21H10ZM10 16C9.71667 16 9.47934 15.904 9.288 15.712C9.09667 15.52 9.00067 15.2827 9 15C8.99934 14.7173 9.09534 14.48 9.288 14.288C9.48067 14.096 9.718 14 10 14H26C26.2833 14 26.521 14.096 26.713 14.288C26.905 14.48 27.0007 14.7173 27 15C26.9993 15.2827 26.9033 15.5203 26.712 15.713C26.5207 15.9057 26.2833 16.0013 26 16H10Z" fill="#FFF9F2"/>
+            </svg>
+            <svg class="close" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="38.6709" height="38.6709" rx="19.3354" fill="white"/>
+              <path d="M10 10L28.6709 28.6709M28.6709 10L10 28.6709" stroke="#FF121F" stroke-width="4"/>
+            </svg>
           </button>
           <div class="nav__wrapper">
             <ul class="nav__list">
@@ -73,22 +75,10 @@
                >
               </li>
               <li class="nav__item">
-                <a class="nav__link js-scroll" data-scroll href="#activities"
+                <a class="nav__link js-scroll" data-scroll href="#schedule"
                   >Расписание и&nbsp;локации</a
                 >
               </li>
-
-              <li class="nav__item">
-                     <a class="nav__link js-scroll" data-scroll href="#child"
-                     >Детская зона</a
-                     >
-                  </li>
-              <li class="nav__item">
-                <a class="nav__link js-scroll" data-scroll href="#zones"
-                  >Партнёрские зоны</a
-                >
-              </li>
-
 
               <li class="nav__item">
                 <a class="nav__link js-scroll" data-scroll href="#faq"
@@ -111,7 +101,7 @@
             <div class="header__container container">
                <div class="header__content">
                   <div class="header__logos-wrapper">
-                     <a href="/" target="_blank"><img src="./img/logos/main.svg" alt="Go to home" width="113" height="32"></a>
+                     <a data-scroll href="#hero"><img src="./img/logos/main.svg" alt="Go to home" width="113" height="32"></a>
                   </div>
                   <nav class="header__nav nav">
                   <ul class="nav__list">
@@ -122,7 +112,7 @@
                       <a class="nav__link js-scroll" data-scroll href="#map">Карта и локации</a>
                     </li>
                     <li class="nav__item">
-                      <a class="nav__link js-scroll" data-scroll href="#activities">Расписание</a>
+                      <a class="nav__link js-scroll" data-scroll href="#schedule">Расписание</a>
                     </li>
                     <li class="nav__item">
                       <a class="nav__link js-scroll" data-scroll href="#faq">Вопросы и ответы</a>
@@ -136,9 +126,11 @@
             </div>
         </header>
         <section class="hero">
-          <h1 class="hero__title visually-hidden">Лето. Пляж. Московский спорт.</h1>
+          <a class="hero__mobile-logo" data-scroll href="#hero"><img src="./img/logos/main.svg" alt="Go to home" width="120" height="34"></a>
+          <h1 class="hero__title visually-hidden" id="hero">Лето. Пляж. Московский спорт.</h1>
           <div class="container">
-            <img class="hero__decor" src="img/hero/decor.svg" alt="" width="1088" height="651">
+            <img class="hero__decor desktop" src="img/hero/decor.svg" alt="" width="1088" height="651">
+            <img class="hero__decor mobile" src="img/hero/decor-mobile.svg" alt="" width="505" height="507">
             <div class="hero__content">
               <div class="hero__subtitle">Три месяца движения, энергии и&nbsp;здоровья в&nbsp;столице</div>
               <div class="hero__top">
@@ -152,7 +144,7 @@
                     <span>Каждую субботу и воскресенье</span>
                     <span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M10 0.833313C11.9891 0.833313 13.8968 1.62349 15.3033 3.03001C16.7098 4.43653 17.5 6.34419 17.5 8.33331C17.5 11.4383 15.1333 14.6916 10.5 18.1666C10.3558 18.2748 10.1803 18.3333 10 18.3333C9.81969 18.3333 9.64425 18.2748 9.5 18.1666C4.86667 14.6916 2.5 11.4383 2.5 8.33331C2.5 6.34419 3.29018 4.43653 4.6967 3.03001C6.10322 1.62349 8.01088 0.833313 10 0.833313ZM10 5.83331C9.33696 5.83331 8.70107 6.0967 8.23223 6.56555C7.76339 7.03439 7.5 7.67027 7.5 8.33331C7.5 8.99635 7.76339 9.63224 8.23223 10.1011C8.70107 10.5699 9.33696 10.8333 10 10.8333C10.663 10.8333 11.2989 10.5699 11.7678 10.1011C12.2366 9.63224 12.5 8.99635 12.5 8.33331C12.5 7.67027 12.2366 7.03439 11.7678 6.56555C11.2989 6.0967 10.663 5.83331 10 5.83331Z" fill="#FFF9F2"/>
+                        <path d="M10 0.833313C11.9891 0.833313 13.8968 1.62349 15.3033 3.03001C16.7098 4.43653 17.5 6.34419 17.5 8.33331C17.5 11.4383 15.1333 14.6916 10.5 18.1666C10.3558 18.2748 10.1803 18.3333 10 18.3333C9.81969 18.3333 9.64425 18.2748 9.5 18.1666C4.86667 14.6916 2.5 11.4383 2.5 8.33331C2.5 6.34419 3.29018 4.43653 4.6967 3.03001C6.10322 1.62349 8.01088 0.833313 10 0.833313ZM10 5.83331C9.33696 5.83331 8.70107 6.0967 8.23223 6.56555C7.76339 7.03439 7.5 7.67027 7.5 8.33331C7.5 8.99635 7.76339 9.63224 8.23223 10.1011C8.70107 10.5699 9.33696 10.8333 10 10.8333C10.663 10.8333 11.2989 10.5699 11.7678 10.1011C12.2366 9.63224 12.5 8.99635 12.5 8.33331C12.5 7.67027 12.2366 7.03439 11.7678 6.56555C11.2989 6.0967 10.663 5.83331 10 5.83331Z" fill="currentColor"/>
                       </svg>пляжи г. Москвы
                     </span>
                   </div>
@@ -180,9 +172,17 @@
             <div class="about__top">
               <div class="about__content">
                 <h2 class="about__title title">О проекте</h2>
-
+                <div class="subtitle">Оставьте позади шум и&nbsp;суету города&nbsp;&mdash; и&nbsp;окажитесь там, где лето чувствуется по-настоящему.</div>
+                <div class="about__marquee">
+                  <div class="marquee js-marquee-left">
+                    <img src="img/about/marquee.svg" width="528" height="80"/>
+                  </div>
+                  <div class="marquee js-marquee-right ">
+                    <img src="img/about/marquee.svg" width="528" height="80"/>
+                  </div>
+                </div>
                 <div class="about__description">
-                  <p class="subtitle">Оставьте позади шум и&nbsp;суету города&nbsp;&mdash; и&nbsp;окажитесь там, где лето чувствуется по-настоящему.</p>
+
                   <p>Пляжные площадки Москвы превращаются в&nbsp;пространство движения, легкости и&nbsp;отдыха. Выбирайте, как провести день: активные игры, тренировки на&nbsp;свежем воздухе или растяжка у&nbsp;воды. </p>
                   <p>Загорайте, занимайтесь спортом в&nbsp;приятной компании и&nbsp;проведите это лето активно!</p>
                 </div>
@@ -767,10 +767,10 @@
 
 
 
-        <section class="faq">
+        <section class="faq" id="faq">
           <div class="container container-small">
             <div class="faq__wrapper ">
-              <div class="title faq__title" id="faq">Вопросы и&nbsp;ответы</div>
+              <div class="title faq__title" >Вопросы и&nbsp;ответы</div>
               <div class="faq__accordeon">
                   <div class="faq__item" style="animation-delay: 0.2s;">
                     <button class="faq__toggler js-faq-toggler">
@@ -837,34 +837,46 @@
           </div>
         </section>
 
-        <footer class="footer container" id="footer">
-          <div class="footer__wrapper container-small">
-              <div class="footer__left">
-                <div class="header-l">Контакты</div>
-                <div class="footer__contacts">
-                    <div class="footer__contacts-item">
-                      <div class="footer__contacts-title">ПО ОБЩИМ ВОПРОСАМ</div>
-                      <a href="mailto:ano@mossport.ru" target="_blank" class="footer__contacts-link">ano@mossport.ru</a>
-                    </div>
-                    <div class="footer__contacts-item">
-                      <div class="footer__contacts-title">ДЛЯ СМИ</div>
-                      <a href="mailto:ano@mossport.ru" target="_blank" class="footer__contacts-link">mossport@greative.pro</a>
-                    </div>
+        <footer class="footer" id="footer">
+          <div class="container">
+            <img src="img/footer/decor.svg" a lt="" class="footer__decor" width="708" height="475">
+
+            <div class="footer__content">
+              <h2 class="title footer__title title--white">Контакты</h2>
+              <div class="footer__smi">
+                <div class="footer__smi-block">
+                  <div class="footer__smi-title">Общая почта:</div>
+                  <a href="mailto:ano@mossport.ru" class="footer__smi-link">ano@mossport.ru</a>
                 </div>
-                <div class="footer__info">
-                    <div class="footer__info-content">Отправьте письмо на&nbsp;электронный адрес со&nbsp;следующей информацией:</div>
-                    <ul>
-                      <li>название СМИ и&nbsp;программы, планируемая дата выхода материала;</li>
-                      <li>ФИО корреспондента&nbsp;/ всех участников съемочной группы с&nbsp;контактными телефонами.</li>
-                    </ul>
-                </div>
-                <div class="footer__docs">
-                    <a href="docs/politika-konfidentsialnosti.pdf" target="_blank">Политика конфиденциальности</a>
-                    <a href="docs/otkaz-ot-pretenziy.pdf" target="_blank">Отказ от претензий от участника</a>
-                    <a href="docs/otkaz-ot-pretenziy-rebenok.pdf" target="_blank">Отказ от претензий от опекуна ребенка</a>
+                <div class="footer__smi-block">
+                  <div class="footer__smi-title">Для СМИ:</div>
+                  <a href="mailto:press@moscow.sport" class="footer__smi-link">press@moscow.sport</a>
                 </div>
               </div>
+              <div class="footer__logos">
+                <a href="#" class="footer__logo">
+                  <img src="img/icons/tg.svg" alt="" width="38" height="38">
+                </a>
+                <a href="#" class="footer__logo">
+                  <img src="img/icons/vk.svg" alt="" width="38" height="38">
+                </a>
+                <a href="#" class="footer__logo">
+                  <img src="img/icons/rutube.svg" alt="" width="38" height="38">
+                </a>
+                <a href="#" class="footer__logo">
+                  <img src="img/icons/max.svg" alt="" width="38" height="38">
+                </a>
+              </div>
+              <div class="footer__docs">
+                <a href="docs/policy.pdf" class="footer__doc-link">Согласие на обработку персональных данных</a>
+                <a href="docs/policy.pdf" class="footer__doc-link">Согласие на обработку персональных данных несовершеннолетнего</a>
+                <a href="docs/policy.pdf" class="footer__doc-link">Политика конфиденциальности</a>
+              </div>
+            </div>
+
           </div>
+
+
 
         </footer>
 
@@ -881,11 +893,10 @@
       </main>
       <!-- Кнопка "наверх" -->
       <a class="up js-scroll" data-scroll href="#header">
-         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
           <rect x="1.66103e-06" y="38" width="38" height="38" rx="19" transform="rotate(-90 1.66103e-06 38)" fill="#FFF9F2"/>
           <path d="M28.5 21.4349L19 12.2144L9.5 21.4349L11.1863 23.0715L19 15.4876L26.8138 23.0715L28.5 21.4349Z" fill="#FA9500"/>
         </svg>
-
        </a>
 
     </div>

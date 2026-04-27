@@ -5,6 +5,10 @@
   .container {
     position: relative;
     padding: 6rem 0 8.5rem;
+
+    @media (max-width: $tablet) {
+      padding: 3.6rem 2.4rem 6.8rem;
+    }
   }
 
   &__wrapper {
@@ -17,6 +21,7 @@
     right: -51.5rem;
     bottom: 3rem;
     z-index: 1;
+    width: 105.4rem;
   }
 
   &__title {
@@ -68,6 +73,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.4rem;
+
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__day {

@@ -85,20 +85,16 @@ img {
   align-items: center;
 }
 
+.desktop {
+  display: block;
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
 
-.header-l {
-   color: $white;
-   text-align: center;
-   font-family: $roboto;
-   font-size: 6.4rem;
-   font-style: normal;
-   font-weight: 400;
-   line-height: normal;
-   text-transform: uppercase;
-   margin-bottom: 5rem;
-
-   @media (max-width: $tablet) {
-      font-size: 3.8rem;
-      margin-bottom: 2rem;
-   }
+.mobile {
+  display: none;
+  @media (max-width: $mobile) {
+    display: block;
+  }
 }

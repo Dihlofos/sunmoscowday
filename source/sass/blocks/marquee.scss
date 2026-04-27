@@ -1,0 +1,12 @@
+.marquee {
+  display: flex;
+  justify-content: center;
+
+  img {
+    max-width: unset;
+
+    @media (max-width: $mobile) {
+      height: 4.3rem;
+    }
+  }
+}
