@@ -85,6 +85,11 @@
          height: 3.6rem;
          fill: $orange;
          align-self: flex-start;
+
+         @media (max-width: $mobile) {
+          width: 3.2rem;
+          height: 3.2rem;
+         }
       }
 
       .faq__up {
