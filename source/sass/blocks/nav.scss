@@ -32,6 +32,11 @@
     }
   }
 
+  &__mobile-logo {
+    display: block;
+    margin: 0 0 4rem;
+  }
+
   &__mobile-toggler {
     position: fixed;
     background: none;
@@ -50,8 +55,9 @@
       width: 100%;
       height: 100%;
       background-color: $red;
+      background: linear-gradient(14deg, #F8C768 -25.45%, #FF1420 99.97%);
       z-index: 72;
-      padding: 1.5rem 2rem;
+      padding: 2.8rem 2rem 1.5rem;
 
       .nav.is-active & {
         display: block;
@@ -105,11 +111,10 @@
     @media (max-width: $tablet) {
       color: $white;
       font-family: $monserrat;
-      font-size: 2.8rem;
+      font-size: 2.4rem;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 600;
       line-height: normal;
-      text-transform: uppercase;
 
       &:hover {
         text-decoration: none;
