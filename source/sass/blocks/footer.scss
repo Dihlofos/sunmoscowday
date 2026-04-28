@@ -12,6 +12,14 @@
     right: -9rem;
     width: 70.8rem;
     z-index: 1;
+
+    @media (max-width: $mobile) {
+      width: 60.7rem;
+      height: 43.4rem;
+      max-width: unset;
+      top: 6rem;
+      right: -23rem;
+    }
   }
 
   &__content {
@@ -19,10 +27,18 @@
     max-width: 54.8rem;
     position: relative;
     z-index: 5;
+
+    @media (max-width: $mobile) {
+      padding: 3.8rem 0 4.9rem;
+    }
   }
 
   &__title {
     margin: 0 0 3rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 2rem;
+    }
   }
 
   &__smi {
@@ -30,6 +46,13 @@
     justify-content: space-between;
     margin: 0 0 6.7rem;
     padding-right: 2.9rem;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 2.5rem;
+      margin: 0 0 4.5rem;
+    }
   }
 
   &__smi-title {
@@ -38,6 +61,10 @@
     line-height: 1.1;
     font-family: $monserrat;
     margin: 0 0 .8rem;
+
+    @media (max-width: $mobile) {
+      font-size: 1.6rem;
+    }
   }
 
   &__smi-link {
@@ -45,12 +72,22 @@
     font-weight: 500;
     line-height: 1.2;
     font-size: 2rem;
+
+    @media (max-width: $mobile) {
+      font-size: 1.6rem;
+    }
   }
 
   &__logos {
     display: flex;
     gap: 2.8rem;
     margin: 0 0 6.4rem;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      justify-content: space-between;
+      margin: 0 0 3.3rem;
+    }
   }
 
   &__docs {
@@ -58,6 +95,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2.3rem;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 1.3rem;
+    }
   }
 
   &__doc-link {
@@ -67,6 +110,10 @@
     line-height: 1.2;
     font-weight: 500;
     max-width: 24.1rem;
+
+    @media (max-width: $mobile) {
+      max-width: unset;
+    }
   }
 
 

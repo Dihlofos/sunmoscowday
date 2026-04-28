@@ -4,6 +4,10 @@
    z-index: 2;
    padding: 6rem 0 9.2rem;
 
+   @media(max-width: $mobile) {
+    padding: 3.2rem 0 9rem;
+   }
+
    &__title {
     font-family: $roboto;
     color: $green;
@@ -12,6 +16,10 @@
     line-height: 115%; /* 46px */
     text-transform: uppercase;
     margin: 0 0 3.5rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 2.8rem;
+    }
    }
 
 
@@ -60,6 +68,10 @@
         padding: 1.6rem 0 1.6rem;
       }
 
+      @media (max-width: $mobile) {
+        font-size: 1.6rem;
+      }
+
    }
 
    &__icon {
@@ -97,6 +109,12 @@
 
       @media (max-width: $tablet) {
         margin-top: -1.6rem;
+      }
+
+      @media (max-width: $mobile) {
+        margin-top: -0.4rem;
+        font-size: 1.2rem;
+        line-height: 1.3;
       }
 
 
