@@ -94,7 +94,7 @@ gulp.task("html", function () {
 gulp.task("js", function () {
   return gulp
     .src("source/js/main/*.js")
-    .pipe(concat("main2.js"))
+    .pipe(concat("main3.js"))
     .pipe(gulp.dest("build/js"));
 });
 

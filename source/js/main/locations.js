@@ -171,7 +171,7 @@
       {
         location: {
           center: [37.555435, 55.792],
-          zoom: vw > 767 ? 10 : 10,
+          zoom: vw > 767 ? 10 : 9,
         },
       },
       [new YMapDefaultSchemeLayer({}), new YMapDefaultFeaturesLayer({})],
