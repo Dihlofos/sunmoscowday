@@ -13,6 +13,10 @@
    max-width: 48.6rem;
    border-radius: 10px;
 
+   @media (max-width: $mobile) {
+    transform: none;
+   }
+
 
    &.hidden {
      display: none;
@@ -40,6 +44,10 @@
        right: 1.8rem;
        width: 2.7rem;
        height: 2.7rem;
+     }
+
+     @media (max-width: $mobile) {
+        padding: 2rem;
      }
 
      img {
